@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#161823">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="@string/exercise3_mes"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="53dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="@string/exercise3_con"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginRight="16dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp">
+
+        <ImageView
+            android:id="@+id/fans"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_notice_fans" />
+
+        <TextView
+            android:id="@+id/text_fans"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:text="@string/exercise3_fans"
+            android:textColor="@color/white"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="66dp" />
+
+        <ImageView
+            android:id="@+id/likes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/fans"
+            android:layout_marginLeft="51.5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_notice_like" />
+        <TextView
+            android:id="@+id/text_like"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:text="@string/exercise3_good"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/text_fans"
+            android:layout_marginLeft="71.5dp"
+            android:layout_marginTop="66dp" />
+
+        <ImageView
+            android:id="@+id/at"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/likes"
+            android:layout_marginLeft="51.5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_notice_people" />
+        <TextView
+            android:id="@+id/text_at"
+            android:layout_width="45.5dp"
+            android:layout_height="20dp"
+            android:text="@string/exercise3_at"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/text_like"
+            android:layout_marginLeft="55.5dp"
+            android:layout_marginTop="66dp" />
+
+        <ImageView
+            android:id="@+id/content1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/at"
+            android:layout_marginLeft="51.5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_notice_comment" />
+        <TextView
+            android:id="@+id/text_comm"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:text="@string/exercise3_cont"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/text_at"
+            android:layout_marginLeft="50.5dp"
+            android:layout_marginTop="66dp" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_meslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
